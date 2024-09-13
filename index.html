@@ -1,0 +1,25 @@
+<input id="num1">
+<input id="num2">
+<button onclick="add()">Answer</button>
+<p id="result">Result</p>
+
+<script>
+    //select input box id num1
+    //select input box id num2
+
+    var N1=document.getElementById("num1")
+    var N2=document.getElementById("num2")
+    //select p tag id result
+    var P1=document.getElementById("result")
+
+    function add(){
+        box1value=Number(N1.value)
+        box2value=Number(N2.value)
+
+        total=box1value+box2value
+
+        P1.textContent=total
+    }
+
+
+</script>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<center>
+<head>
+    <title>Student form</title>
+</head>
+
+<body>
+    <h1>STUDENT FORM</h1>
+    <form id="Studentform">
+        <table border="1">
+            <tr>
+                <td>Name</td> <td> <input type="text" id="name"> </td>
+            </tr>
+
+            <tr>
+                <td>Age</td> <td> <input type="number" id="age"> </td>
+            </tr>
+
+            <tr>
+                <td>Gender</td> 
+                <td> 
+                    <input type="radio" name="Gender">Male 
+                    <input type="radio" name="Gender">Female 
+                </td>
+            </tr>
+
+            <tr>
+                <td>Course</td>
+                <td>
+                    <select id="course">
+                        <option>Python</option>
+                        <option>JavaScript</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Email</td> <td> <input type="email" id="email"> </td>
+            </tr>
+
+            <tr>
+                <td>Action</td>
+                <td>
+                    <button type="submit" style="background-color:aqua;" onclick="Save()">Save</button>
+                </td>
+            </tr>
+
+        </table>
+    </form>
+    
+</body>
+</center>
+</html>
+
+<script>
+    var form=document.getElementById("Studentform")
+    var Name=document.getElementById("name")
+    var Age=document.getElementById("age")
+    var Course=document.getElementById("course")
+    var Email=document.getElementById("email")
+
+    
+    function Save(){
+        var listitem=document.createElement("form")
+        listitem.textContent=input.value
+        console.log(listitem)
+
+    }
+    
+</script>
+
+
